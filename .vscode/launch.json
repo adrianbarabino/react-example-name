@@ -1,0 +1,25 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "type": "node",
+        "request": "launch",
+        "name": "Start Next.js (Development)",
+        "runtimeExecutable": "npm",
+        "runtimeArgs": ["run", "dev"],
+        "port": 3000,
+        "console": "integratedTerminal"
+      },
+      {
+        "type": "node",
+        "request": "launch",
+        "name": "Start Next.js (Production)",
+        "runtimeExecutable": "npm",
+        "runtimeArgs": ["start"],
+        "preLaunchTask": "npm build",
+        "port": 3000,
+        "console": "integratedTerminal"
+      }
+    ]
+  }
+  
